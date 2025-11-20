@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Tracker Test</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<h1>Calorie Tracker</h1>
+<div class="container">
+    <div class="form1">
+<form id="mealForm">
+    <h2>Meal Tracker</h2>
+    <label>Meal Name:</label><br>
+    <input type="text" id="mealName" required><br><br>
+
+    <label>Calories:</label><br>
+    <input type="number" id="calories" required><br><br>
+
+    <label>Meal Type:</label><br>
+    <select id="mealType">
+        <option value="Breakfast">Breakfast</option>
+        <option value="Lunch">Lunch</option>
+        <option value="Dinner">Dinner</option>
+        <option value="Snack">Snack</option>
+    </select><br><br>
+
+    <button type="submit">Add Meal</button>
+    <h2>Today's Total Calories: <span id="dailyTotal">0</span></h2>
+    <p id="message"></p>
+    
+</form>
+</div>
+
+
+<div class="form2">
+<form id="burnForm">
+    <h2>Record Burned Calories</h2>
+    <label>Activity:</label><br>
+    <input type="text" id="activity" required><br><br>
+
+    <label>Calories Burned:</label><br>
+    <input type="number" id="burnCalories" required><br><br>
+
+    <button type="submit">Add Burned Calories</button>
+    <h2>Net Calories Today: <span id="netCalories">0</span></h2>
+    <p id="burnMessage"></p>
+
+</form>
+</div>
+</div>
+
+
+
+<h2 class="downp">Weekly Summary</h2>
+<ul id="weeklySummary"></ul>
+
+
+
+<!-- Floating AI Chat Button -->
+<div id="chatWidget">
+    <div id="chatWindow" class="hidden">
+        <div id="chatOutput" class="chat-output"></div>
+        <input type="text" id="chatInput" placeholder="Ask me anything..." />
+        <button id="sendBtn">Send</button>
+    </div>
+    <button id="chatToggle" class="chat-btn"><p>🌸</p></button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
