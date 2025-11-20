@@ -1,0 +1,157 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(100deg,#0b2b26,#163832,#235347,#8eb69b);
+
+}
+
+/* Headings */
+h1 {
+    color: #daf1de;
+}
+
+/* Forms */
+form {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 300px;
+    background-color: #daf1de;
+    
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+h2{
+    color: #0b2b26;
+}
+/* Buttons */
+button {
+    background-color: #0b2b26;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8eb69b;
+}
+
+/* Messages */
+p {
+    font-size: 14px;
+    color: #27ae60;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    background-color: #ecf0f1;
+    margin: 5px 0;
+    padding: 8px 12px;
+    border-radius: 5px;
+    width: 40%;
+    margin-left: 300px;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+.container{
+    display: flex;
+}
+.form1{
+    margin-top: 30px;
+    margin-left: 250px;
+    margin-right: 60px;
+}
+.form2{
+    margin-top: 30px;
+}
+.downp{
+    color: #8eb69b;
+    text-align: center;
+}
+
+/* Chat Button */
+#chatWidget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chat-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #0b2b26;
+    color: #8eb69b;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+#chatWindow {
+    width: 300px;
+    height: 400px;
+    background: #8eb69b;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#chatWindow.hidden {
+    display: none;
+}
+
+.chat-output {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+#chatInput {
+    padding: 5px;
+    flex: none;
+    margin-bottom: 5px;
+}
+
+#sendBtn {
+    padding: 5px;
+}
+.chat-btn p {
+    padding: 2px 2px 2px 2px;
+}
+
+
+
+
